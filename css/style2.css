@@ -1,0 +1,60 @@
+.active {
+	border-bottom:0;
+	text-decoration:none;
+	color:#d7d5d4;
+
+	}
+.picture-wrap{
+	display:inline-block;
+	vertical-align:top;
+	width: 170px;
+	height: 240px;
+	margin-bottom:30px;
+	margin-right:10px;
+	font-family:PFHandbookPro-Italic;
+	font-weight:400;
+	color:#c2bdb7;
+	font-size:18px;
+}
+.image-wrap{
+	background:#c2bdb7;
+	width: 170px;
+	height: 170px;
+	margin-bottom: 8px;
+
+}
+.image-staff {
+	width:170px;
+	height:170px;
+	background: url(../img/staff-sprite.png) no-repeat;
+	
+}
+.image1{}
+.image2{background:url(../img/staff-sprite.png) -200px 0;}
+.image3{background:url(../img/staff-sprite.png) -400px 0;}
+.image4{background:url(../img/staff-sprite.png) -600px 0;}
+.image5{background:url(../img/staff-sprite.png) -800px 0;}
+
+.image6{background:url(../img/staff-sprite.png) 0 -291px;}
+.image7{background:url(../img/staff-sprite.png) -200px -291px;}
+.image8{background:url(../img/staff-sprite.png) -400px -291px;}
+.image9{background:url(../img/staff-sprite.png) -600px -291px;}
+.image10{background:url(../img/staff-sprite.png) -800px -291px;}
+
+.image11{background:url(../img/staff-sprite.png) 0 -583px;}
+.image12{background:url(../img/staff-sprite.png) -200px -583px;}
+.image13{background:url(../img/staff-sprite.png) -400px -583px;}
+.image14{background:url(../img/staff-sprite.png) -600px -583px;}
+.image15{background:url(../img/staff-sprite.png) -800px -583px;}
+
+.image16{background:url(../img/staff-sprite.png) 0 -875px;}
+.image17{background:url(../img/staff-sprite.png) -200px -875px;}
+.image18{background:url(../img/staff-sprite.png) -400px -875px;}
+
+
+.picture-wrap span{
+	font-family:PFHandbookPro-Regular;
+	font-weight:normal;
+	line-height:25px;
+	color:#403835;
+}
