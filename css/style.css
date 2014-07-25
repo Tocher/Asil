@@ -161,10 +161,18 @@ li {
 }
 
 /* line 92, ../scss/_component.scss */
-.component-fullwidth li video {
+.component-fullwidth li video, .component-fullwidth video {
   min-width: 100%;
   max-width: none;
   position: absolute;  
+}
+.component-fullwidth-child li img {
+  min-width: 100%;
+  max-width: none;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 .component-fullwidth li img {
   min-width: 100%;
@@ -3156,6 +3164,11 @@ body article h2 {
 body article h2 span {
   font-family: "PFHandbookPro-Bold";
 }
+body article h3 {
+  font: 30px "PFHandbookPro-Bold";
+  margin-bottom: 28px;
+  margin-top:40px;
+}
 @media all and (max-width: 767px) {
   /* line 246, ../scss/style.scss */
   body article h2 {
@@ -3166,6 +3179,7 @@ body article h2 span {
 body article p {
   font: 20px/30px "PFHandbookPro-Thin";
   color: #8a8685;
+  margin-bottom:30px;
 }
 /* line 266, ../scss/style.scss */
 body article ul {
@@ -3582,18 +3596,13 @@ body .copy #trigger-overlay-social:hover {
   background: url('../img/social-s463cd8a023.png') 0 0 no-repeat;
 }
 
-/* line 695, ../scss/style.scss */
-.overlay ul li a:hover,
-.overlay ul li a:focus {
-  color: #e3fcb1;
-}
 
 /* Effects */
 /* line 700, ../scss/style.scss */
 .overlay-hugeinc {
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+  /-webkit-transition: opacity 0.5s, visibility 0s 0.5s;
   transition: opacity 0.5s, visibility 0s 0.5s;
 }
 
@@ -3614,10 +3623,10 @@ body .copy #trigger-overlay-social:hover {
 /* line 719, ../scss/style.scss */
 .overlay-hugeinc div ul {
   opacity: 0.4;
-  -webkit-transform: translateY(-25%) rotateX(35deg);
+  /*-webkit-transform: translateY(-25%) rotateX(35deg);
   transform: translateY(-25%) rotateX(35deg);
   -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
-  transition: transform 0.5s, opacity 0.5s;
+  transition: transform 0.5s, opacity 0.5s;*/
 }
 
 /* line 727, ../scss/style.scss */
@@ -3644,4 +3653,125 @@ body .copy #trigger-overlay-social:hover {
   .overlay ul li {
     min-height: 34px;
   }
+}
+.breadcrumbs, .breadcrumbs a {
+  color:#c2bdb7;
+  font-family: PFHandbookPro-Thin;
+  font-size: 16px;
+}
+.breadcrumbs a {
+  border-bottom:1px solid rgb(197, 195, 194);
+  padding-bottom: 2px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.breadcrumbs a:hover {
+  border-bottom-color: #403835;
+  text-decoration: none;
+}
+body article ul.child li a {
+  text-transform: lowercase;
+}
+body article ul.child-u li a {
+  text-transform: capitalize;
+}
+body article .info {
+  font-size:20px;
+  font-family: "PFHandbookPro-Thin";
+  color: #258275;
+  padding:0;
+}
+body article .info div {
+  margin-bottom: 20px;
+}
+body article .info span {
+  font-size:20px;
+  font-family: "PFHandbookPro-Thin";
+  color: #258275;
+}
+body article .info span:hover {
+  border-bottom:1px solid #c5c3c2;
+  cursor: pointer;
+}
+body article .info p {
+  color:#403835;
+  font-family: "PFHandbookPro-Bold";
+  margin-bottom: 10px;
+}
+
+.contact {
+  padding:0;
+  margin-top:20px;
+}
+.contact div {
+  padding-top: 69px;
+  background-color: #fff;
+  text-align: center;
+  min-height: 527px;
+  font-size: 30px;
+  border: 1px solid #cfcac8;
+}
+/* line 544, ../scss/style.scss */
+.contact div h5 {
+  font: 30px "PFHandbookPro-Bold";
+  color: #9f9a98;
+  text-transform: uppercase;
+  margin-bottom: 72px;
+}
+
+/* line 558, ../scss/style.scss */
+.contact.letter div form {
+  font: 17px "PFHandbookPro-Regular";
+  color: #c5c5c5;
+}
+/* line 562, ../scss/style.scss */
+.contact.letter div form label {
+  display: inline-block;
+  text-align: left;
+  margin-bottom: 40px;
+}
+/* line 567, ../scss/style.scss */
+.contact.letter div form label:before, .overlay.letter div form label:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+}
+/* line 574, ../scss/style.scss */
+.contact.letter div form label span {
+  float: left;
+  text-align: right;
+  width: 110px;
+}
+/* line 580, ../scss/style.scss */
+.contact.letter div form label input[type=text] {
+  width: 550px;
+  margin-left: 20px;
+  border: none;
+  border-bottom: 1px solid #edeceb;
+}
+/* line 587, ../scss/style.scss */
+.contact.letter div form label input[type=text]:focus {
+  border-bottom-color: #d9d6d6;
+}
+/* line 590, ../scss/style.scss */
+.contact.letter div form label input[type=text]:focus + span {
+  color: #a19b98;
+}
+/* line 597, ../scss/style.scss */
+.contact.letter div form input[type=submit] {
+  height: 83px;
+  width: 100%;
+  display: block;
+  margin: 0;
+  border: none;
+  background-color: #69605c;
+  font: 15px "PFHandbookPro-Bold";
+  text-transform: uppercase;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }

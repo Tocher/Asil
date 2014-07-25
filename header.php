@@ -11,7 +11,7 @@
 	<script src="js/modernizr.custom.js"></script>
 	<!--<script src="js/jquery.smslider.min.js"></script>-->
 	<script src="js/scripts.js"></script>
-	<title>Научно производственное объединение Асил - Главная</title>
+	<title>Научно производственное объединение Alis - Главная</title>
 </head>
 <body>
 	<div class="container-fluid">
@@ -25,35 +25,3 @@
 				</div>
 			</div>
 		</header>
-		<nav class="row">
-			<div class="container">
-				<div class="row">
-					<ul class="list-inline">
-						<li class="col-lg-2 col-xs-6 col-sm-3"><a href="" class="active">главная</a></li>
-						<li class="col-lg-2 col-xs-6 col-sm-3 col-lg-offset-1"><a href="#">о компании </a></li>
-						<li class="col-lg-3 col-xs-6 col-sm-3 col-lg-offset-1"><a href="#">направления</a></li>
-						<li class="col-lg-2 col-xs-6 col-sm-3 col-lg-offset-1"><a href="#">контактная информация</a></li>
-					</ul>
-				</div>
-			</div>
-		</nav>
-		<div class="custom-select" style="display:none;">
-			<select id="fxselect" name="fxselect">
-				<option value="-1">Choose an effect...</option>
-				<option value="fxSoftScale" selected>Soft scale</option>
-				<option value="fxPressAway">Press away</option>
-				<option value="fxSideSwing">Side Swing</option>
-				<option value="fxFortuneWheel">Fortune wheel</option>
-				<option value="fxSwipe">Swipe</option>
-				<option value="fxPushReveal">Push reveal</option>
-				<option value="fxSnapIn">Snap in</option>
-				<option value="fxLetMeIn">Let me in</option>
-				<option value="fxStickIt">Stick it</option>
-				<option value="fxArchiveMe">Archive me</option>
-				<option value="fxVGrowth">Vertical growth</option>
-				<option value="fxSlideBehind">Slide Behind</option>
-				<option value="fxSoftPulse">Soft Pulse</option>
-				<option value="fxEarthquake">Earthquake</option>
-				<option value="fxCliffDiving">Cliff diving</option>
-			</select>
-		</div>		
