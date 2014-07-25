@@ -1,0 +1,746 @@
+@import "compass/reset";
+li{list-style: none;}
+@import "compass/css3";
+@import "compass/utilities/sprites";
+@import "my_mixins";
+//@import "smslider";
+@import "component";
+@import "fxfullwidth";
+
+
+//#####################  Fonts ######################
+
+@include font-face("PFHandbookPro-Italic", font-files('PFHandbookPro-Italic.ttf','PFHandbookPro-Italic.otf','PFHandbookPro-Italic.eot','PFHandbookPro-Italic.svg','PFHandbookPro-Italic.woff'));
+@include font-face("PFHandbookPro-Bold", font-files('PFHandbookPro-Bold.ttf','PFHandbookPro-Bold.otf','PFHandbookPro-Bold.eot','PFHandbookPro-Bold.svg','PFHandbookPro-Bold.woff'));
+@include font-face("PFHandbookPro-Regular", font-files('PFHandbookPro-Regular.ttf','PFHandbookPro-Regular.otf','PFHandbookPro-Regular.eot','PFHandbookPro-Regular.svg','PFHandbookPro-Regular.woff'));
+@include font-face("PFHandbookPro-Thin", font-files('PFHandbookPro-Thin.ttf','PFHandbookPro-Thin.otf','PFHandbookPro-Thin.eot','PFHandbookPro-Thin.svg','PFHandbookPro-Thin.woff'));
+@include font-face("PFHandbookPro-Black", font-files('PFHandbookPro-Black.ttf','PFHandbookPro-Black.otf','PFHandbookPro-Black.eot','PFHandbookPro-Black.svg','PFHandbookPro-Black.woff'));
+@include font-face("PFHandbookPro-ExtraThin", font-files('PFHandbookPro-ExtraThin.ttf','PFHandbookPro-ExtraThin.otf','PFHandbookPro-ExtraThin.eot','PFHandbookPro-ExtraThin.svg','PFHandbookPro-ExtraThin.woff'));
+@include font-face("PFHandbookPro-Medium", font-files('PFHandbookPro-Medium.ttf','PFHandbookPro-Medium.otf','PFHandbookPro-Medium.eot','PFHandbookPro-Medium.svg','PFHandbookPro-Medium.woff'));
+
+//###################################################
+
+.clearfix
+{
+	&:before,&:after
+	{
+		content: "";
+		display: block;
+		width: 100%;
+		height: 0;
+		clear: both;
+		padding-top: 1px;
+		margin-top: -1px;
+	}
+}
+
+$base-color: #403835;
+
+body
+{
+	color: $base-color;
+	header
+	{
+		height: 260px;
+		padding-top: 100px;
+		.logo
+		{
+			padding-top: 59px;
+			width: 170px;
+			background: image-url('logo.png') 0 0 no-repeat;
+			font: 12px/13px "PFHandbookPro-Italic";
+			text-transform: uppercase;
+			color: #c2bdb7;
+			p
+			{
+				margin-left: 35px;
+			}
+		}
+
+		.lang
+		{
+			margin-top: 11px;
+			font: 15px "PFHandbookPro-Thin";
+			a,span
+			{
+				display: inline-block;
+				color: $base-color;
+				border-bottom: 1px solid #e0dedb;
+				padding: 4px 0 2px 0;
+				text-decoration: none;
+				@include transition(all 0.5s);
+				&:hover
+				{
+					text-decoration: none;
+				}
+				&.active
+				{
+					background-color: #c2bdb7;
+					color: #fff;
+					border-bottom: none;
+					padding: 4px 12px;
+				}
+				&:not(.active)
+				{
+					margin-left: 15px;
+					&:hover
+					{
+						border-bottom: 1px solid $base-color;
+					}
+				}
+			}
+			span
+			{
+				cursor: default;
+			}
+		}
+
+		.phone
+		{
+			text-align: right;
+			padding-right: 3px;
+			margin-top: 10px;
+			width: 255px;
+			p
+			{
+				white-space: nowrap;
+				padding-left: 35px;
+				height: 24px;
+				background: image-url('phone.png') 0 0 no-repeat;
+				display: inline-block;
+				font: 30px/24px "PFHandbookPro-Black";
+				span
+				{
+					font: 20px/24px "PFHandbookPro-Thin";
+					color: #c2bdb7;
+				}
+			}
+
+			a
+			{
+				display: inline-block;
+				font: 18px "PFHandbookPro-Thin";
+				color: $base-color;
+				text-decoration: none;
+				border-bottom: 1px solid #c5c3c2;
+				margin-top: 2px;
+				padding-bottom: 1px;
+				@include transition(all 0.5s);
+				&:hover
+				{
+					border-bottom: 1px solid $base-color;
+				}
+			}
+		}
+	}
+
+	nav
+	{
+		background-color: $base-color;
+		text-align: center;
+
+		li
+		{
+			white-space: nowrap;
+
+			&:first-child
+			{
+				text-align: left;
+				@media all and (max-width: 768px) {
+					text-align: center;
+				}
+			}
+			&:last-child
+			{
+				text-align: right;
+				@media all and (max-width: 768px) {
+					text-align: center;
+				}
+			}
+		
+			a,a:active,a:focus
+			{
+				font: 18px/60px "PFHandbookPro-Regular";
+				color: #c2bdb7;
+				border-bottom: 1px solid #67605c;
+				text-decoration: none;
+				padding-bottom: 2px;
+				@include transition(all 0.5s);
+
+				&:hover
+				{
+					color: #c2bdb7;
+					text-decoration: none;
+					border-bottom: 1px solid #fff;
+				}
+
+				&.active
+				{
+					cursor: default;
+					border-bottom: 1px solid #fff;
+					color: #fff;
+					&:hover
+					{
+						color: #fff;
+					}
+				}
+			}
+		}
+	}
+
+	#component
+	{
+		.container
+		{
+			max-width: 870px;
+			position: absolute;
+			top: 150px;
+			//left: calc(50% - 365px);
+			left: 50%;
+			-webkit-transform: translateX(-50%);
+			transform: translateX(-50%);
+
+			/*@media all and (max-width: 897px) {
+				left: 5px;
+			}*/
+			z-index: 100;
+			text-align: left;
+			color: #fff;
+			h5
+			{
+				font: 70px/50px "PFHandbookPro-Bold";
+				a
+				{
+					color: inherit;
+					span
+					{
+						display: inline-block;
+						padding-bottom: 1px;
+						border-bottom: 1px solid #e3dfd5;
+						margin-bottom: 22px;
+						@include transition(all 0.5s);
+					}
+					&:hover
+					{
+						span
+						{
+							border-bottom-color: #fff;
+						}
+					}
+				}
+			}
+			p
+			{
+				font: 25px "PFHandbookPro-Thin";
+				margin-top: 20px;
+			}
+		}
+	}
+
+	article
+	{
+		padding-top: 84px;
+		padding-bottom: 90px;
+		color: $base-color;
+		h2
+		{
+			margin-bottom: 38px;
+			font: 50px "PFHandbookPro-ExtraThin";
+			span
+			{
+				font-family: "PFHandbookPro-Bold";
+			}
+
+			@media all and (max-width: 767px) {
+				text-align: center;
+			}
+		}
+
+		p
+		{
+			font: 20px/30px "PFHandbookPro-Thin";
+			color: #8a8685;
+		}
+
+		ul
+		{
+			font: 18px/19px "PFHandbookPro-ExtraThin";
+			text-transform: uppercase;
+			min-width: 83px;
+			li
+			{
+				margin-bottom: 23px;
+				a
+				{
+					border-bottom: 1px solid #c5c3c2;
+					color: inherit;
+					display: inline-block;
+					padding-bottom: 2px;
+					@include transition(all 0.5s);
+					&:hover
+					{
+						color: inherit;
+						text-decoration: none;
+						border-bottom-color: $base-color;
+					}
+				}
+			}
+		}
+	}
+
+	.clients
+	{
+		padding-top: 85px;
+		padding-bottom: 133px;
+		background-color: #e3dfd5;
+		line-height: 90px;
+		text-align: center;
+		position: relative;
+		h3
+		{
+			font: 30px "PFHandbookPro-ExtraThin";
+			color: $base-color;
+			text-align: center;
+			text-transform: uppercase;
+			margin-bottom: 100px;
+		}
+
+		img
+		{
+			margin: 0 1.7% 0 1.7%;
+			opacity: 0.3;
+			@include transition(opacity 0.5s);
+			&:hover
+			{
+				opacity: 1;
+			}
+		}
+	}
+
+	footer
+	{
+		background: #e3dfd5 image-url('footer_bg.jpg') center center no-repeat;
+		background-size: cover;
+		//height: 433px;
+		overflow: visible !important;
+
+		.container
+		{
+			> div
+			{
+				margin-top: 65px;
+				height: 368px;
+				&.active,&:hover
+				{
+					background-color: $base-color;
+					color: #fff;
+					height: 470px;
+					margin-top: -37px;
+					padding-top: 102px;
+					a
+					{
+						&:hover:not(.look-map)
+						{
+							border-bottom: 1px solid #fff;
+						}
+						&.look-map
+						{
+							span
+							{
+								&:hover
+								{
+									border-bottom: 1px solid #fff;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		.col-lg-3
+		{
+			padding-left: 7%;
+		}
+
+		h5
+		{
+			font: 18px "PFHandbookPro-Regular";
+			margin-bottom: 44px;
+			a,a:focus
+			{
+				border-bottom: 1px solid #908b85;
+				display: inline-block;
+				padding-bottom: 1px;
+				color: inherit;
+				text-decoration: none;
+				@include transition(all 0.5s);
+				&:hover
+				{
+					text-decoration: none;
+					color: inherit;
+					border-bottom-color: #fff;
+				}
+
+				&.active
+				{
+					cursor: default;
+					border-bottom: 1px solid #fff;
+					color: #fff;
+					&:hover
+					{
+						color: #fff;
+					}
+				}
+			}
+		}
+
+		ul
+		{
+			li
+			{
+				margin-bottom: 22px;
+				a
+				{
+					border-bottom: 1px solid #908b85;
+					display: inline-block;
+					padding-bottom: 2px;
+					color: #258275;
+					font: 18px/19px "PFHandbookPro-Thin";
+					@include transition(all 0.5s);
+					&:hover
+					{
+						text-decoration: none;
+						color: #258275;
+						border-bottom-color: $base-color;
+					}
+				}
+			}
+		}
+
+		.addres,.phone,.email,.look-map
+		{
+			color: #258275;
+			line-height: 22px;
+			font: 18px "PFHandbookPro-Thin";
+			white-space: nowrap;
+		}
+
+		.look-map
+		{
+			padding-left: 15px;
+			background: image-url('map-icon.png') left center no-repeat;
+			span
+			{
+				border-bottom: 1px solid #908b85;
+				margin-top: 3px;
+				display: inline-block;
+				color: #258275;
+				padding-bottom: 1px;
+				@include transition(all 0.5s);
+				&:hover
+				{
+					text-decoration: none;
+					color: #258275;
+					border-bottom-color: $base-color;
+				}
+			}
+		}
+
+		.phone
+		{
+			margin-top: 40px;
+			margin-bottom: 40px;
+		}
+
+		.email
+		{
+			border-bottom: 1px solid #908b85;
+			display: inline-block;
+			padding-bottom: 1px;
+			@include transition(all 0.5s);
+			&:hover
+			{
+				text-decoration: none;
+				border-bottom-color: $base-color; 
+			}
+		}
+	}
+
+	.copy
+	{
+		height: 125px;
+		padding-top: 50px;
+		font: 17px "PFHandbookPro-Regular";
+		color: #c2bdb7;
+		line-height: 50px;
+		#trigger-overlay-social
+		{
+			font: 14px "PFHandbookPro-Medium";
+			width: 170px;
+			color: #9f9b9a;
+			border: 1px solid #f1efea;
+			padding: 15px 25px;
+			text-align: center;
+			@include transition(all 0.2s);
+			background-color: transparent;
+			&:hover
+			{
+				background-color: #9f9b9a;
+				color: #fff;
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+
+
+// ########## FullscreenOverlayStyles ###################
+
+/* Overlay style */
+.overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(255,255,255,0.9);
+	z-index: 99999;
+}
+
+/* Overlay closing cross */
+.overlay .overlay-close {
+	width: 17px;
+	height: 17px;
+	position: absolute;
+	right: 34px;
+	top: 34px;
+	overflow: hidden;
+	border: none;
+	background: image-url('cross.png') no-repeat center center;
+	text-indent: 200%;
+	color: transparent;
+	outline: none;
+	z-index: 100;
+}
+
+/* Menu style */
+.overlay div  {
+	padding-top: 69px;
+	background-color: #fff;
+	text-align: center;
+	position: relative;
+	width: 48%;
+	margin: 0 auto;
+	top: 50%;
+	height: 60%;
+	min-height: 527px;
+	font-size: 54px;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	border: 1px solid #cfcac8;
+	h5
+	{
+		font: 30px "PFHandbookPro-Bold";
+		color: #9f9a98;
+		text-transform: uppercase;
+		margin-bottom: 72px;
+	}
+}
+
+.overlay.letter
+{
+	div
+	{
+		width: 628px;
+		form
+		{
+			font: 17px "PFHandbookPro-Regular";
+			color: #c5c5c5;
+			label
+			{
+				display: inline-block;
+				text-align: left;
+				margin-bottom: 40px;
+				&:before,&:after
+				{
+					content: "";
+					display: block;
+					height: 0;
+					clear: both;
+				}
+				span
+				{
+					float: left;
+					text-align: right;
+					width: 110px;
+				}
+				input[type=text]
+				{
+					//float: right;
+					width: 376px;
+					margin-left: 20px;
+					border: none;
+					border-bottom: 1px solid #edeceb;
+					&:focus 
+					{
+						border-bottom-color: #d9d6d6;
+						&+ span
+						{
+							color: #a19b98;
+						}
+					}
+				}
+			}
+			input[type=submit]
+			{
+				height: 83px;
+				width: 100%;
+				display: block;
+				margin: 0;
+				border: none;
+				background-color: #69605c;
+				font: 15px "PFHandbookPro-Bold";
+				text-transform: uppercase;
+				color: #fff;
+				position: absolute;
+				bottom: 0;
+				left: 0;
+			}
+		}
+	}
+}
+
+.overlay ul {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	display: inline-block;
+	height: 100%;
+	position: relative;
+}
+
+.overlay ul li {
+	display: inline-block;
+	margin-bottom: 57px;
+}
+
+$social: sprite-map('social/*.png',$spacing:40px);
+.overlay ul li a {
+	//padding-top: 84px;
+	min-width: 100px;
+	display: block;
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+	font: 17px "PFHandbookPro-Regular";
+	span
+	{
+		width: 64px;
+		height: 64px;
+		display: block;
+		margin: 0 auto 18px auto;
+	}
+	&.facebook
+	{
+		color: #3d5b99;
+		span
+		{
+			background: sprite($social,facebook) no-repeat;
+		}
+	}
+	&.twitter
+	{
+		color: #00aced;
+		span
+		{
+			background: sprite($social,twitter) no-repeat;
+		}
+	}
+	&.google-plus
+	{
+		color: #dd4b39;
+		span
+		{
+			background: sprite($social,google-plus) no-repeat;
+		}
+	}
+	&.live-journal
+	{
+		span
+		{
+			background: sprite($social,live-journal) no-repeat;
+		}
+		color: #004359;
+	}
+	&.vkontakte
+	{
+		span
+		{
+			background: sprite($social,vkontakte) no-repeat;
+		}
+		color: #45668e;
+	}
+	&.odnoklassniki
+	{
+		span
+		{
+			background: sprite($social,odnoklassniki) no-repeat;
+		}
+		color: #f78411;
+	}
+}
+
+.overlay ul li a:hover,
+.overlay ul li a:focus {
+	color: #e3fcb1;
+}
+
+/* Effects */
+.overlay-hugeinc {
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+	transition: opacity 0.5s, visibility 0s 0.5s;
+}
+
+.overlay-hugeinc.open {
+	opacity: 1;
+	visibility: visible;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+
+.overlay-hugeinc div  {
+	-webkit-perspective: 1200px;
+	perspective: 1200px;
+}
+
+.overlay-hugeinc div  ul {
+	opacity: 0.4;
+	-webkit-transform: translateY(-25%) rotateX(35deg);
+	transform: translateY(-25%) rotateX(35deg);
+	-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+	transition: transform 0.5s, opacity 0.5s;
+}
+
+.overlay-hugeinc.open div  ul {
+	opacity: 1;
+	-webkit-transform: rotateX(0deg);
+	transform: rotateX(0deg);
+}
+
+.overlay-hugeinc.close div  ul {
+	-webkit-transform: translateY(25%) rotateX(-35deg);
+	transform: translateY(25%) rotateX(-35deg);
+}
+
+@media screen and (max-height: 30.5em) {
+	.overlay div  {
+		height: 70%;
+		font-size: 34px;
+	}
+	.overlay ul li {
+		min-height: 34px;
+	}
+}

@@ -1,0 +1,141 @@
+#sm_slider {
+	height: 700px;
+	//margin: 32px 0 0 0;
+	position: relative;
+	//width: 100%;
+	overflow: hidden;
+}
+
+#sm_slider ul {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+    
+.sm_slide {
+	color: #3d3d3d;
+	display: none;
+	font-size: 100%;
+	height: 700px;
+	left: 0;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	visibility: hidden;
+	width: 100%;
+	margin: 0;
+}
+
+.sm_slide.active {
+	display: block;
+	visibility: visible;
+}
+
+.sm_slide img {
+	width: 100%;
+	min-height: 700px;
+	min-width: 100%;
+	@media all and (max-width: 1600px ) {
+		width: 1600px;
+		height: 703px;
+	}
+}
+
+$arrow: sprite-map("arrow/*.png",$spacing:40px);
+.sm_prev, .sm_next {
+	cursor: pointer;
+	display: block;
+	font-style: normal;
+	margin: -31px 0 0 0;
+	position: absolute;
+	bottom: 0;
+	width: 80px;
+	height: 80px;
+	z-index: 1000;
+	@include transition(all 0.5s);
+}
+
+.sm_prev {
+	background: rgba(255,255,255,0.2) sprite($arrow,left,32px,26px) no-repeat;
+	left: calc(50% - 365px);
+	@media all and (max-width: 897px) {
+		left: 5px;
+	}
+}  
+
+.sm_next {
+	background: rgba(255,255,255,0.2) sprite($arrow,right,32px,26px) no-repeat;
+	left: calc(50% - 283px);
+	@media all and (max-width: 897px) {
+		left: 90px;
+	}
+}
+
+.sm_prev:hover {
+	background-color: rgba(255,255,255,0.6);
+}
+
+.sm_next:hover {
+	background-color: rgba(255,255,255,0.6);
+}
+
+.sm_nav {
+	bottom: 14px;
+	clear: both;
+	//display: block;
+	display: none;
+	overflow: hidden;
+	padding: 5px 0px;
+	position: absolute;
+	left: 0px;
+	z-index: 999;
+	width: 100%;
+	min-width: 460px;
+	height: 20px;
+	text-align: center;
+}
+
+.sm_nav-item {
+	display: inline-block;
+	cursor: pointer;
+	//float: left;
+	height: 12px;
+	padding: 2px;
+	width: 12px;
+	z-index: 999;
+	list-style-type: none;
+	font-size: 11px;
+	color: #ccc;
+}
+
+.sm_nav-item i {
+	display: block;
+	width: 6px;
+	height: 6px;
+	position: relative;
+	top: 0;
+	left: 0;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+	border-radius: 6px;
+	background-color: #3f83c4;
+}
+
+/*.sm_nav-item.active, .sm_nav-item.active:hover {
+	cursor: default;
+	color: #e4e4e4;
+}*/
+
+.sm_nav-item.active i{
+	background-color: #e4e4e4;
+}
+
+.sm_nav-item:hover i {
+	background: #7f7f7f;
+}
+
+.sm_nav-item.active:hover i{
+	background-color: #bfbfbf;
+}
