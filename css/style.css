@@ -3495,6 +3495,7 @@ body .copy #trigger-overlay-social:hover {
 /* line 587, ../scss/style.scss */
 .overlay.letter div form label input[type=text]:focus {
   border-bottom-color: #d9d6d6;
+  outline:0;
 }
 /* line 590, ../scss/style.scss */
 .overlay.letter div form label input[type=text]:focus + span {
