@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="css/style2.css">
 	<link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/jquery.validate.min.js"></script>	
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/modernizr.custom.js"></script>
 	<!--<script src="js/jquery.smslider.min.js"></script>-->

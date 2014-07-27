@@ -68,12 +68,12 @@
 					<div class="col-lg-12 col-xs-12 col-sm-12 contact letter">
 						<div>
 							<h5>Форма обратной связи</h5>
-							<form action="action.php" method="GET">
+							<form id="write_letter">
 								<label><input type="text" name="name"><span>ваше имя</span></label>
 								<label><input type="text" name="phone"><span>номер телефона</span></label>
 								<label><input type="text" name="email"><span>эл. почта</span></label>
 								<label><input type="text" name="message"><span>сообщение</span></label>
-								<input type="submit" value="отправить">
+								<input type="submit" value="отправить" class="disable">
 							</form>
 						</div>
 					</div>

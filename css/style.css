@@ -3458,6 +3458,10 @@ body .copy #trigger-overlay-social:hover {
 }
 
 /* line 555, ../scss/style.scss */
+.overlay.letter div h3 {  
+  font: 30px/30px "PFHandbookPro-Bold";
+  margin-top:150px;
+}
 .overlay.letter div {
   width: 628px;
 }
@@ -3518,6 +3522,12 @@ input:focus {
   position: absolute;
   bottom: 0;
   left: 0;
+}
+.overlay.letter div form input[type=submit].disable {
+  background-color: #d6d3d2;
+}
+.overlay.letter div form input[type=submit]:not(.disable):hover {
+  background-color:#847a76;
 }
 
 /* line 615, ../scss/style.scss */
@@ -3739,12 +3749,18 @@ body article .info p {
   text-align: left;
   margin-bottom: 40px;
 }
+.contact.letter div form label > label {
+  display: none !important;
+}
 /* line 567, ../scss/style.scss */
 .contact.letter div form label:before, .overlay.letter div form label:after {
   content: "";
   display: block;
   height: 0;
   clear: both;
+}
+.overlay.letter div form label > label {
+  display: none !important;
 }
 /* line 574, ../scss/style.scss */
 .contact.letter div form label span {
@@ -3812,6 +3828,26 @@ body article .info p {
   bottom: 0;
   left: 0;
 }
+.contact.letter div form input[type=submit].disable {
+  background-color: #d6d3d2;
+}
+.contact.letter div form input[type=submit]:not(.disable):hover {
+  background-color:#847a76;
+}
+.contact .overlay-close {
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  right: 34px;
+  top: 34px;
+  overflow: hidden;
+  border: none;
+  background: url('../img/cross.png') no-repeat center center;
+  text-indent: 200%;
+  color: transparent;
+  outline: none;
+  z-index: 100;
+}
 .photogallery {
   border:2px solid #403835;
   position: relative;
@@ -3874,4 +3910,57 @@ body article .info p {
   border:5px solid #bdb788;
   width: 70px;
   height: 70px;
+}
+
+#licence-wrap .picture-wrap.picture-wrap-hover {
+  background: url(../img/licence_h.png) no-repeat;
+  -webkit-transition: background 0.5s;
+  -moz-transition: background 0.5s;
+  -o-transition: background 0.5s;
+  transition: background 0.5s;
+  cursor: pointer;
+}
+
+.picture-wrap-hover div {
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.testimonial {
+  display: inline-block;
+  font-family: "PFHandbookPro-Thin";
+  line-height: 20px;
+  color: #403835;
+  margin-bottom: 30px;
+}
+.testimonial_quote {
+  padding:15px 25px;
+  border: 1px solid #d9d7d7;
+  position: relative;
+}
+.testimonial_quote::before, .testimonial_quote::after {
+  content: ''; 
+  position: absolute;
+  right: 20px; bottom: -20px;
+
+  border: 10px solid transparent; border-left: 10px solid #d9d7d7; border-top: 10px solid #d9d7d7;
+ }
+ .testimonial_quote::after {
+  border-left: 9px solid white; border-top: 9px solid white;
+  bottom: -19px; 
+ }
+.testimonial_author {
+  float: right;
+  color: #403835;
+  font-family: "PFHandbookPro-Bold";
+  font-size: 18px;
+  width: 130px;
+  margin-top: 30px;
+}
+.testimonial_author span {
+  color: #c2bdb7;
+  font-family: "PFHandbookPro-Thin";
 }

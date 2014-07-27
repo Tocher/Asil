@@ -27,12 +27,12 @@
 		<div>
 			<button type="button" class="overlay-close">Close</button>
 			<h5>Написать письмо</h5>
-			<form action="action.php" method="GET">
+			<form id="write_letter">
 				<label><input type="text" name="name"><span>ваше имя</span></label>
 				<label><input type="text" name="phone"><span>номер телефона</span></label>
 				<label><input type="text" name="email"><span>эл. почта</span></label>
 				<label><input type="text" name="message"><span>сообщение</span></label>
-				<input type="submit" value="отправить">
+				<input type="submit" value="отправить" class="disable">
 			</form>
 		</div>
 	</div>
