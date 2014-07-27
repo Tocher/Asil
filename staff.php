@@ -86,11 +86,11 @@
 				</div>
 				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 active">
 					<ul>
-						<h5><a href="#" class="active">о компании</a></h5>
+						<h5><a href="#">о компании</a></h5>
 						<li><a href="#">слово директора</a></li>
 						<li><a href="#">отзывы клиентов</a></li>
 						<li><a href="#">лицензии</a></li>
-						<li><a href="#">команда</a></li>
+						<li><a href="#" class="active">команда</a></li>
 						<li><a href="#">вакансии</a></li>
 					</ul>
 				</div>

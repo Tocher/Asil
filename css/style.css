@@ -3493,6 +3493,9 @@ body .copy #trigger-overlay-social:hover {
   border-bottom: 1px solid #edeceb;
 }
 /* line 587, ../scss/style.scss */
+input:focus {
+  outline:0;
+}
 .overlay.letter div form label input[type=text]:focus {
   border-bottom-color: #d9d6d6;
   outline:0;
@@ -3706,6 +3709,9 @@ body article .info p {
   padding:0;
   margin-top:20px;
 }
+.contact div.vac_div {
+  min-height: 600px;
+}
 .contact div {
   padding-top: 69px;
   background-color: #fff;
@@ -3761,6 +3767,36 @@ body article .info p {
 .contact.letter div form label input[type=text]:focus + span {
   color: #a19b98;
 }
+.contact.letter div form label input[type=file] {
+  display: none;
+  width: 550px;
+  margin-left: 20px;
+  border: none;
+  border-bottom: 1px solid #edeceb;
+}
+/* line 587, ../scss/style.scss */
+.contact.letter div form label input[type=file]:focus {
+  border-bottom-color: #d9d6d6;
+}
+/* line 590, ../scss/style.scss */
+.contact.letter div form label input[type=file]:focus + span {
+  color: #a19b98;
+}
+.contact.letter div form label div {
+  font: 15px "PFHandbookPro-Bold";
+  text-transform: uppercase;
+  color: #fff;
+  min-height: 30px;
+  width: 120px;
+  position: absolute;
+  background-color: #69605c;
+  padding: 5px;
+  line-height: 30px;
+  border: none;
+  right: 120px;
+  margin-top: -40px;
+  cursor: pointer;
+}
 /* line 597, ../scss/style.scss */
 .contact.letter div form input[type=submit] {
   height: 83px;
@@ -3775,4 +3811,27 @@ body article .info p {
   position: absolute;
   bottom: 0;
   left: 0;
+}
+.photogallery {
+  border:2px solid #403835;
+  position: relative;
+  padding: 40px 80px;
+}
+.photogallery h3 {
+  color: #aeacab;
+  font-size: 25px;
+  text-transform: uppercase;
+  position: absolute;
+  background: #fff;
+  margin: 0;
+  padding: 5px 10px;
+  top: -20px;
+  left: 80px;
+}
+.photogallery .photo {
+  display: inline-block;
+  width: 70px;
+  height: 70px;
+  background: #c2bdb7;
+  margin: 10px;
 }

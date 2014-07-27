@@ -33,4 +33,10 @@ $(document).ready(function () {
     });
     // ############################################################
 
+    // ## Обзор файла вакансий ###
+    $('input[type=file]').change(function(e){
+      $in=$(this);
+      $in.next().val($in.val().substr(12));
+    });
+
 });
