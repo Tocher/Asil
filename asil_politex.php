@@ -50,44 +50,44 @@
 				</div>
 				<div class="col-lg-10 col-xs-8 col-xs-offset-1 col-sm-offset-0 col-sm-9 col-md-10">
 					<p>Pellentesque ac justo cursus massa mattis mollis ac in risus. Proin gravida erat ac elit tincidunt luctus. Praesent nibh metus, condimentum non dui quis, scelerisque viverra quam. Curabitur suscipit lobortis tellus, eget pulvinar mauris convallis sed. Sed eget leo sagittis, ultrices diam et, aliquet ante. Donec erat tortor, accumsan non eleifend at, blandit a odio. Integer sed nunc scelerisque, varius dolor nec, suscipit leo. Donec rutrum suscipit hendrerit. Integer pharetra egestas pulvinar. Proin porttitor ante enim, sit amet tincidunt enim rhoncus et. Curabitur sodales ultricies ligula, id rhoncus mi consequat quis. Sed faucibus fermentum turpis, nec cursus arcu tristique et. Sed tristique non quam ut tincidunt.</p>					
-					<div class="photogallery">
+					<div id="gallery" class="photogallery">
 						<h3>Фотогалерея продукции</h3>
-						<div class="photo"><img src="img/small.png" alt="" class="pg"></div>
-						<div class="photo"><img src="img/small.png" alt="" class="pg"></div>
-						<div class="photo"><img src="img/small.png" alt="" class="pg"></div>
-						<div class="photo"><img src="img/small.png" alt="" class="pg"></div>
-						<div class="photo"><img src="img/small.png" alt="" class="pg"></div>
-						<div class="photo"><img src="img/small.png" alt="" class="pg"></div>
-						<div class="photo"><img src="img/small.png" alt="" class="pg"></div>
-						<div class="photo"><img src="img/small.png" alt="" class="pg"></div>
-						<div class="photo"><img src="img/small.png" alt="" class="pg"></div>
-						<div class="photo"><img src="img/small.png" alt="" class="pg"></div>
-						<div class="photo"><img src="img/small.png" alt="" class="pg"></div>
-						<div class="photo"><img src="img/small.png" alt="" class="pg"></div>
-						<div class="photo"><img src="img/small.png" alt="" class="pg"></div>
-						<div class="photo"><img src="img/small.png" alt="" class="pg"></div>
-						<div class="photo"><img src="img/small.png" alt="" class="pg"></div>
-						<div class="photo"><img src="img/small.png" alt="" class="pg"></div>
-						<div class="photo"><img src="img/small.png" alt="" class="pg"></div>
-						<div class="photo"><img src="img/small.png" alt="" class="pg"></div>
-						<div class="photo"><img src="img/small.png" alt="" class="pg"></div>
-						<div class="photo"><img src="img/small.png" alt="" class="pg"></div>
-						<div class="photo"><img src="img/small.png" alt="" class="pg"></div>
-						<div class="photo"><img src="img/small.png" alt="" class="pg"></div>
-						<div class="photo"><img src="img/small.png" alt="" class="pg"></div>
-						<div class="photo"><img src="img/small.png" alt="" class="pg"></div>
-						<div class="photo"><img src="img/small.png" alt="" class="pg"></div>
-						<div class="photo"><img src="img/small.png" alt="" class="pg"></div>
-						<div class="photo"><img src="img/small.png" alt="" class="pg"></div>
-						<div class="photo"><img src="img/small.png" alt="" class="pg"></div>
-						<div class="photo"><img src="img/small.png" alt="" class="pg"></div>
-						<div class="photo"><img src="img/small.png" alt="" class="pg"></div>
-						<div class="photo"><img src="img/small.png" alt="" class="pg"></div>
-						<div class="photo"><img src="img/small.png" alt="" class="pg"></div>
-						<div class="photo"><img src="img/small.png" alt="" class="pg"></div>
-						<div class="photo"><img src="img/small.png" alt="" class="pg"></div>
-						<div class="photo"><img src="img/small.png" alt="" class="pg"></div>
-						<div class="photo"><img src="img/small.png" alt="" class="pg"></div>
+						<div class="photo"><img src="img/small.png" data-big="img/big.png" alt="" class="pg"></div>
+						<div class="photo"><img src="img/small.png" data-big="img/big.png" alt="" class="pg"></div>
+						<div class="photo"><img src="img/small.png" data-big="img/big.png" alt="" class="pg"></div>
+						<div class="photo"><img src="img/small.png" data-big="img/big.png" alt="" class="pg"></div>
+						<div class="photo"><img src="img/small.png" data-big="img/big.png" alt="" class="pg"></div>
+						<div class="photo"><img src="img/small.png" data-big="img/big.png" alt="" class="pg"></div>
+						<div class="photo"><img src="img/small.png" data-big="img/big.png" alt="" class="pg"></div>
+						<div class="photo"><img src="img/small.png" data-big="img/big.png" alt="" class="pg"></div>
+						<div class="photo"><img src="img/small.png" data-big="img/big.png" alt="" class="pg"></div>
+						<div class="photo"><img src="img/small.png" data-big="img/big.png" alt="" class="pg"></div>
+						<div class="photo"><img src="img/small.png" data-big="img/big.png" alt="" class="pg"></div>
+						<div class="photo"><img src="img/small.png" data-big="img/big.png" alt="" class="pg"></div>
+						<div class="photo"><img src="img/small.png" data-big="img/big.png" alt="" class="pg"></div>
+						<div class="photo"><img src="img/small.png" data-big="img/big.png" alt="" class="pg"></div>
+						<div class="photo"><img src="img/small.png" data-big="img/big.png" alt="" class="pg"></div>
+						<div class="photo"><img src="img/small.png" data-big="img/big.png" alt="" class="pg"></div>
+						<div class="photo"><img src="img/small.png" data-big="img/big.png" alt="" class="pg"></div>
+						<div class="photo"><img src="img/small.png" data-big="img/big.png" alt="" class="pg"></div>
+						<div class="photo"><img src="img/small.png" data-big="img/big.png" alt="" class="pg"></div>
+						<div class="photo"><img src="img/small.png" data-big="img/big.png" alt="" class="pg"></div>
+						<div class="photo"><img src="img/small.png" data-big="img/big.png" alt="" class="pg"></div>
+						<div class="photo"><img src="img/small.png" data-big="img/big.png" alt="" class="pg"></div>
+						<div class="photo"><img src="img/small.png" data-big="img/big.png" alt="" class="pg"></div>
+						<div class="photo"><img src="img/small.png" data-big="img/big.png" alt="" class="pg"></div>
+						<div class="photo"><img src="img/small.png" data-big="img/big.png" alt="" class="pg"></div>
+						<div class="photo"><img src="img/small.png" data-big="img/big.png" alt="" class="pg"></div>
+						<div class="photo"><img src="img/small.png" data-big="img/big.png" alt="" class="pg"></div>
+						<div class="photo"><img src="img/small.png" data-big="img/big.png" alt="" class="pg"></div>
+						<div class="photo"><img src="img/small.png" data-big="img/big.png" alt="" class="pg"></div>
+						<div class="photo"><img src="img/small.png" data-big="img/big.png" alt="" class="pg"></div>
+						<div class="photo"><img src="img/small.png" data-big="img/big.png" alt="" class="pg"></div>
+						<div class="photo"><img src="img/small.png" data-big="img/big.png" alt="" class="pg"></div>
+						<div class="photo"><img src="img/small.png" data-big="img/big.png" alt="" class="pg"></div>
+						<div class="photo"><img src="img/small.png" data-big="img/big.png" alt="" class="pg"></div>
+						<div class="photo"><img src="img/small.png" data-big="img/big.png" alt="" class="pg"></div>
+						<div class="photo"><img src="img/small.png" data-big="img/big.png" alt="" class="pg"></div>
 					</div>
 				</div>
 			</div>

@@ -3835,3 +3835,43 @@ body article .info p {
   background: #c2bdb7;
   margin: 10px;
 }
+.ovgallery div {
+  width: 80%;
+  max-width: 950px;
+  padding-top: 20px;
+}
+#main_photo img {
+  max-width: 100%;
+}
+#main_photo {
+  padding: 0;
+  border:none;
+  min-height: 300px;
+  position: relative;
+  top: 40%;
+}
+#ovgallery_mini {
+  position: relative;
+  padding: 0;
+  padding-top: 20px;
+  border:none;
+  min-height: 20px;
+  max-height: 100px;
+  top: 23%;
+}
+#ovgallery_mini img.active{
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  border:5px solid #bdb788;
+  width: 70px;
+  height: 70px;
+}
+#ovgallery_mini img:hover{
+  box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  border:5px solid #bdb788;
+  width: 70px;
+  height: 70px;
+}

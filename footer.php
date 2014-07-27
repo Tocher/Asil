@@ -36,6 +36,22 @@
 			</form>
 		</div>
 	</div>
+	<div class="overlay overlay-hugeinc ovgallery">
+		<div>
+			<button type="button" id="close_ovgallery" class="overlay-close">Close</button>
+			<div id="main_photo"></div>
+			<div id="ovgallery_mini">
+				<img src="img/small.png" data-big="img/big.png" alt="" class="pg active">
+				<img src="img/small.png" data-big="img/big.png" alt="" class="pg">
+				<img src="img/small.png" data-big="img/big.png" alt="" class="pg">
+				<img src="img/small.png" data-big="img/big.png" alt="" class="pg">
+				<img src="img/small.png" data-big="img/big.png" alt="" class="pg">
+				<img src="img/small.png" data-big="img/big.png" alt="" class="pg">
+				<img src="img/small.png" data-big="img/big.png" alt="" class="pg">
+				<img src="img/small.png" data-big="img/big.png" alt="" class="pg">
+			</div>
+		</div>
+	</div>
 
 	<script src="js/classie.js"></script>
 	<script src="js/main.js"></script>

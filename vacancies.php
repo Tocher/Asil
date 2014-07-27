@@ -37,7 +37,7 @@
 		<article class="row">
 			<div class="container">
 				<div class="breadcrumbs col-lg-10 col-xs-12 col-sm-10 col-lg-offset-2 col-xs-offset-0 col-sm-offset-2"><a href="">главная</a> / <a href="">о компании</a> /</div>
-				<h2 class="col-lg-10 col-xs-12 col-sm-10 col-lg-offset-2 col-xs-offset-0 col-sm-offset-2"><span>Вакансии</span></h2>				
+				<h2 class="col-lg-10 col-xs-12 col-sm-10 col-lg-offset-2 col-xs-offset-0 col-sm-offset-2"><span>Вакансии</span></h2>
 				<div class="col-lg-2 col-xs-3 col-sm-3 col-md-2">
 					<ul class="child">
 						<li><a href="">отзывы клиентов</a></li>
